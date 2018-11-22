@@ -1,7 +1,8 @@
 package pattern.creational.builder;
 
 /**
- * builder模式中的Director
+ * 电脑类,Builder模式中的Product
+ *
  * @author 七夜雪
  * 2018/11/14 13:48
  */
@@ -9,35 +10,19 @@ public class Computer {
 
     private String cpu;
     private String memory;
-    private String Mainboard;
+    private String mainboard;
     private String disk;
-
-    public String getCpu() {
-        return cpu;
-    }
 
     public void setCpu(String cpu) {
         this.cpu = cpu;
-    }
-
-    public String getMemory() {
-        return memory;
     }
 
     public void setMemory(String memory) {
         this.memory = memory;
     }
 
-    public String getMainboard() {
-        return Mainboard;
-    }
-
     public void setMainboard(String mainboard) {
-        Mainboard = mainboard;
-    }
-
-    public String getDisk() {
-        return disk;
+        this.mainboard = mainboard;
     }
 
     public void setDisk(String disk) {
@@ -49,7 +34,7 @@ public class Computer {
         return "Computer{" +
                 "cpu='" + cpu + '\'' +
                 ", memory='" + memory + '\'' +
-                ", Mainboard='" + Mainboard + '\'' +
+                ", mainboard='" + mainboard + '\'' +
                 ", disk='" + disk + '\'' +
                 '}';
     }

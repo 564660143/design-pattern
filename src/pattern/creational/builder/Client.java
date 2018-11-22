@@ -9,9 +9,8 @@ public class Client {
 
     public static void main(String[] args) {
         ComputerBuilder builder = new ComputerBuilder();
-        Director director = new Director(builder);
-        director.excuteBuilder();
-        Computer computer = builder.getComputer();
+        Person director = new Person(builder);
+        Computer computer = director.excuteBuilder("酷睿I7", "金士顿 DDR4 16G", "三星512G SSD", "华硕X99");
         System.out.println(computer);
     }
 

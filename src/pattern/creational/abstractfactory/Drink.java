@@ -1,7 +1,4 @@
-package pattern.creational.abstractfactory;/**
- * @author 七夜雪
- * @create 2018-11-22 15:02
- */
+package pattern.creational.abstractfactory;
 
 /**
  * 饮料接口

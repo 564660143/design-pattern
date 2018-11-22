@@ -1,7 +1,4 @@
 package pattern.creational.abstractfactory;/**
- * @author 七夜雪
- * @create 2018-11-22 15:03
- */
 
 /**
  * 食物接口

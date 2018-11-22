@@ -5,32 +5,33 @@ package pattern.creational.builder;
  * @author 七夜雪
  * 2018/11/14 13:51
  */
-public class ComputerBuilder {
+public class ComputerBuilder implements IComputerBuilder{
+    private Computer computer  = new Computer();
 
-    private Computer computer  = new Computer() ;
 
-    public Computer getComputer() {
+    @Override
+    public Computer build() {
         return this.computer;
     }
 
-    public ComputerBuilder buildCpu(String cpu){
+    @Override
+    public void buildCpu(String cpu){
         computer.setCpu(cpu);
-        return this;
     }
 
-    public ComputerBuilder buildMemory(String memory){
+    @Override
+    public void buildMemory(String memory){
         computer.setMemory(memory);
-        return this;
     }
 
-    public ComputerBuilder buildMainboard(String mainboard){
+    @Override
+    public void buildMainboard(String mainboard){
         computer.setMainboard(mainboard);
-        return this;
     }
 
-    public ComputerBuilder buildDisk(String disk){
+    @Override
+    public void buildDisk(String disk){
         computer.setDisk(disk);
-        return this;
     }
 
 }
